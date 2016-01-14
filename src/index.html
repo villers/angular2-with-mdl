@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% if (o.htmlWebpackPlugin.options.env == 'development') { %}
+  <html lang="">
+{% } else { %}
+  <html lang="" manifest="manifest.appcache">
+{% } %}
+<head>
+  <title>Angular2Mdl</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Angular 2 with Mdl">
+
+  <style>
+    .loader {
+      margin: 60px auto;
+      font-size: 10px;
+      position: relative;
+      text-indent: -9999em;
+      border-top: .6em solid rgba(0, 150, 136, 0.8);
+      border-right: .6em solid rgba(0, 150, 136, 0.8);
+      border-bottom: .6em solid rgba(0, 150, 136, 0.8);
+      border-left: .6em solid rgba(0, 150, 136, 0.4);
+      -webkit-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-animation: load8 1.1s infinite linear;
+      animation: load8 1.1s infinite linear;
+    }
+    .loader,
+    .loader:after {
+      border-radius: 50%;
+      width: 4em;
+      height: 4em;
+    }
+    @-webkit-keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body class="mdl-color--grey-100 mdl-color-text--grey-700">
+  <app>
+    <div style="text-align: center;">
+      <div class="loader">Loading...</div>
+    </div>
+  </app>
+
+  {% if (o.htmlWebpackPlugin.options.env == 'development') { %}
+    <script src="http://localhost:8080/webpack-dev-server.js"></script>
+    <script src="http://localhost:8080/vendor.bundle.js"></script>
+    <script src="http://localhost:8080/bootstrap.bundle.js"></script>
+  {% } else { %}
+    <script src="vendor.bundle.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+  {% } %}
+</body>
+</html>

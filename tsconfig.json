@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true
+  },
+  "filesGlob": [
+    "./src/**/*.ts",
+    "./test/**/*.ts",
+    "!./node_modules/**/*.ts"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": {
+    "rewriteTsconfig": true
+  },
+  "files": [
+    "./src/app/app.ts",
+    "./src/app/modules/home/home.ts",
+    "./src/bootstrap.ts",
+    "./src/vendor.ts",
+    "./test/injector.spec.ts",
+    "./test/sanity-check.spec.ts"
+  ]
+}

@@ -1,0 +1,13 @@
+.home {
+  .mdl-card {
+    width:100%;
+    max-width:512px;
+    margin: 0 auto;
+  }
+
+  .mdl-card__title { height: 176px; }
+  .mdl-card__title-text {
+    font-size: 56px;
+  }
+  .mdl-card__supporting-text { font-size: 14px; }
+}

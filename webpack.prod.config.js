@@ -46,20 +46,20 @@ module.exports = {
       template: 'src/index.html',
       inject: false
     }),
-    new CopyWebpackPlugin([{ from: './src/app', to: 'app' }], { ignore: ['*.ts'] })
+    new CopyWebpackPlugin([{ from: './src/app', to: 'app' }], { ignore: ['*.ts', '*.scss'] })
   ],
 
   resolve: {
-    extensions: ['', '.ts', '.js', '.css']
+    extensions: ['', '.ts', '.js', '.json', '.css', '.html']
   },
 
   module: {
     loaders: [
       { test: /\.ts$/, loader: 'ts-loader' },
-      { test: /\.scss$/, loader: "style-loader!css-loader!sass-loader" },
+      { test: /\.json$/,  loader: 'json-loader' },
+      { test: /\.scss$/, loader: "style-loader!raw-loader!sass-loader" },
       { test: /\.css$/, loader: "style-loader!css-loader" },
-      { test: /\.(ttf|eot|svg|woff(2)?).*$/, loader: "file-loader" },
-      { test: /\.(png|jpg|jp(e)?g)$/, loader: "url-loader?limit=1000" }
+      { test: /\.(ttf|eot|svg|woff(2)?).*$/, loader: "file-loader?name=app/fonts/[name].[ext]" }
     ],
     noParse: [ /zone\.js\/dist\/.+/, /angular2\/bundles\/.+/ ]
   }

@@ -33,7 +33,7 @@ module.exports = {
   ],
 
   resolve: {
-    extensions: ['', '.ts', '.js', '.json', '.css', '.html']
+    extensions: ['', '.ts', '.js', '.json', '.css', '.html', '.scss']
   },
 
   module: {

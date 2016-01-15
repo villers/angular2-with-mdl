@@ -3,14 +3,13 @@ import {Component} from 'angular2/core';
 
 import {Home} from './modules/home/home';
 
-import './app.scss';
-
 /**
  * App component.
  */
 @Component({
-  selector: 'app', // <app></app>
-  templateUrl: 'app/app.html',
+  selector: 'app',
+  template: require('!raw!./app.html'),
+  styles: [ require('!raw!sass!./app.scss') ],
   directives: [ROUTER_DIRECTIVES]
 })
 

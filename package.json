@@ -6,7 +6,7 @@
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 8080 --config webpack.dev.config.js",
     "build": "node ./node_modules/webpack/bin/webpack --colors --progress --display-error-details -p --config webpack.prod.config.js --production",
     "test": "node ./node_modules/karma/bin/karma start",
-    "clean": "node ./node_modules/rimraf build"
+    "clean": "node ./node_modules/rimraf/bin build"
   },
   "devDependencies": {
     "appcache-webpack-plugin": "^1.2.1",

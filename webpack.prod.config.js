@@ -46,7 +46,7 @@ module.exports = {
       template: 'src/index.html',
       inject: false
     }),
-    new CopyWebpackPlugin([{ from: './src/app', to: 'app' }], { ignore: ['*.ts', '*.scss'] })
+    new CopyWebpackPlugin([{ from: './src/app', to: 'app' }], { ignore: ['*.ts', '*.scss', '*.html'] })
   ],
 
   resolve: {

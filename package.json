@@ -42,7 +42,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "angular2": "^2.0.0-beta.1",
+    "angular2": "^2.0.0-beta.2",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.13",
     "material-design-icons": "^2.1.3",

@@ -78,7 +78,6 @@
     ],
     "radix": true,
     "semicolon": true,
-    "sort-object-literal-keys": true,
     "switch-default": true,
     "triple-equals": [
       true,

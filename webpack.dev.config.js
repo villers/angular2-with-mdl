@@ -41,7 +41,7 @@ module.exports = {
       { test: /\.ts$/, loader: "tslint", exclude: [/node_modules/] }
     ],
     loaders: [
-      { test: /\.ts$/, loader: 'ts-loader' },
+      { test: /\.ts$/, loader: 'awesome-typescript-loader' },
       { test: /\.json$/,  loader: 'json-loader' },
       { test: /\.scss$/, loader: "style-loader!raw-loader!sass-loader" },
       { test: /\.css$/, loader: "style-loader!css-loader" },

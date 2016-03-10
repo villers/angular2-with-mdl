@@ -1,0 +1,7 @@
+{
+  "ambientDependencies": {
+    "es6-shim": "registry:dt/es6-shim#0.31.2+20160215162030",
+    "node": "registry:dt/node#4.0.0+20160226132328",
+    "zone.js": "registry:dt/zone.js#0.0.0+20160209151603"
+  }
+}
